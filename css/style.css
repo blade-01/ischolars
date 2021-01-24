@@ -1,0 +1,379 @@
+body {
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+}
+
+.bg-light {
+  background-color: #fff !important;
+}
+
+/*BANNER*/
+
+#banner {
+  height: 100vh;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-gap: 25px;
+}
+
+/*NAV*/
+
+.navbar-brand img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+/*SERVICES*/
+
+#services {
+  margin: 2.5rem 0;
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+#services h3 {
+  font-size: 35px;
+  margin-bottom: 1rem;
+}
+
+#servces p {
+  font-size: 18px;
+}
+
+#services .service-boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  grid-gap: 10px;
+  margin: 3rem 0 2rem 0;
+}
+
+#services .service-boxes .service-box {
+  padding: 5rem 2rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+#services .service-boxes .service-box h3 {
+  font-size: 17px;
+  margin-top: 1rem;
+}
+
+/*VIDEO*/
+
+#video {
+  padding: 0;
+  margin: 1rem 4rem 3rem 4rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #fff;
+  border-radius: 10px 0 0 10px;
+}
+
+#video .image-box {
+  position: relative;
+}
+
+#video .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+
+#video .image-box i {
+  font-size: 35px;
+  color: #fff;
+  position: absolute;
+  top: 41%;
+  left: 41%;
+  padding: 1.5rem;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#video .vid-content {
+  padding: 0 1.8rem;
+}
+
+#video .vid-content p {
+  font-size: 16px;
+}
+
+#video .vid-content h3 {
+  font-size: 15px;
+  margin: 4rem 0 1rem 0;
+}
+
+#video .vid-content h4 {
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 16px;
+}
+
+/*JOIN*/
+
+#join {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.6))
+    ),
+    url("./images/losa-6196-01_Blog-header_DayInTheLife_Rob.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding: 1.8rem 0;
+  color: #fff;
+  text-align: center;
+}
+
+#join h3 {
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+#join p {
+  margin-bottom: 1.5rem;
+}
+
+#join a {
+  color: #fff;
+  padding: 0.7rem 2.2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/*FOOTER*/
+
+#footer {
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  padding: 3.6rem;
+  background-color: #fff;
+}
+
+#footer .main1-box img {
+  width: 60px;
+  height: 60px;
+}
+
+#footer .main1-box p {
+  font-size: 16px;
+}
+
+#footer .main1-box .social-handles {
+  display: flex;
+  align-items: center;
+}
+
+#footer .main1-box .social-handles i {
+  font-size: 20px;
+  margin: 1.5rem 1rem 1.5rem 0;
+}
+
+#footer .main2-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  align-items: center;
+  border-right: 1px solid #ccc;
+  padding-right: 3.5rem;
+}
+
+#footer .main2-box .box h3 {
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+
+#footer .main2-box .box a {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.7rem;
+}
+
+/*@MEDIA - TABLET*/
+
+@media (min-width: 769px) and (max-width: 900px) {
+  #services .service-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 10px;
+    margin: 3rem 0 1.7rem 0;
+  }
+}
+
+/*@MEDIA - MOBILE*/
+
+@media screen and (max-width: 768px) {
+  /*BANNER*/
+
+  #banner {
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  #banner h1 {
+    font-size: 30px;
+  }
+
+  #banner p {
+    font-size: 20px;
+  }
+
+  /*NAV*/
+
+  .navbar-brand img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /*SERVICES*/
+
+  #services {
+    margin: 2.5rem 0;
+    padding: 1rem;
+  }
+
+  #services h3 {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+
+  #servces p {
+    font-size: 14px;
+  }
+
+  #services .service-boxes {
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin: 1.5rem;
+  }
+
+  #services .service-boxes .service-box {
+    padding: 3.5rem 1rem;
+  }
+
+  #services .service-boxes .service-box h3 {
+    font-size: 17px;
+    margin-top: 1rem;
+  }
+
+  /*VIDEO*/
+
+  #video {
+    padding: 0;
+    margin: 1rem;
+    grid-template-columns: 1fr;
+    border-radius: 0px;
+  }
+
+  #video .image-box {
+    position: relative;
+  }
+
+  #video .image-box img {
+    border-radius: 10px 10px 0 0;
+  }
+
+  #video .image-box i {
+    font-size: 18px;
+    padding: 1rem;
+  }
+
+  #video .vid-content {
+    padding: 0 0.8rem;
+  }
+
+  #video .vid-content p {
+    font-size: 14px;
+  }
+
+  #video .vid-content h3 {
+    font-size: 14px;
+    margin: 2.4rem 0 1rem 0;
+  }
+
+  #video .vid-content h4 {
+    font-size: 14px;
+  }
+
+  /*JOIN*/
+
+  #join {
+    padding: 1.5rem 0.6rem;
+  }
+
+  #join h3 {
+    font-size: 16px;
+  }
+
+  #join p {
+    margin-bottom: 0.8rem;
+    font-size: 14px;
+  }
+
+  #join a {
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+  }
+
+  /*FOOTER*/
+
+  #footer {
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+    padding: 1.6rem;
+  }
+
+  #footer .main1-box img {
+    width: 40px;
+    height: 40px;
+  }
+
+  #footer .main1-box p {
+    font-size: 14px;
+  }
+
+  #footer .main1-box .social-handles {
+    display: flex;
+    align-items: center;
+  }
+
+  #footer .main1-box .social-handles i {
+    font-size: 16px;
+    margin: 1rem 0.7rem 1rem 0;
+  }
+
+  #footer .main2-box {
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+    border-right: none;
+    padding-right: 0rem;
+  }
+
+  #footer .main2-box .box h3 {
+    font-size: 16px;
+    margin-bottom: 0.7rem;
+  }
+
+  #footer .main2-box .box a {
+    margin-bottom: 0.5rem;
+  }
+}
